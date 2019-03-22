@@ -1,0 +1,20 @@
+.InfoCompl {
+  background: #cea49b;
+}
+.Infopromo {
+  background: #a48079
+}
+.InfoPerso {
+  background: #d5bbb6
+}
+h1 {
+  text-align: center;
+  line-height: 2.5;
+}
+ul,p{
+  line-height: 2.5;
+}
+.checkbox {
+width: 15%
+height:15%
+}
