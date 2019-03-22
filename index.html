@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Formulaire d'inscription</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <form class="" action="index.html" method="post">
+    <fieldset class="InfoPerso">
+      <h1>Information personnelle</h1>
+      <ul>
+
+        <li>Civilité * :
+          <select class="HouF" name="HouF">
+
+            <option value="Blanc" selected disabled></option>
+            <option value="Femme">Madame</option>
+            <option value="Monsieur">Monsieur</option>
+          </select>
+        </li>
+
+        <li><label for=" Nom">Nom * : </label><input type="text" name="Nom" id="Votre Nom ici" placeholder="Votre nom ici" required /></li>
+        <li><label for="Prénom">Prénom * : </label><input type="text" name="Prénom" id="Votre Prénom ici" placeholder="Votre prénom ici" required /></li>
+        <li><label for="Date de naissance">Date de naissance * : </label><input type="date" name="Date de naissance" id="Date de naissance" required /></li>
+        <li><label for="Numéro de téléphone">Numéro de téléphone fixe : </label><input type="tel" name="Numéro de téléphone fixe" id="Numéro de téléphone fixe" placeholder="" /></li>
+        <li><label for="Numéro de télephone portable">Numéro de téléphone portable * : </label><input type="tel" name="Numéro de téléphone portable" id="Numéro de téléphone portable" placeholder="" required /></li>
+        <li><label for="Numéro de rue">Numéro de rue * : </label><input type="text" name="Numéro de rue" size="1" id="N°" placeholder="N°" required /><label for="Nom de rue"> Nom de rue : </label><input type="text" name="Nom de rue" id="Nom de rue"
+            placeholder="Nom de rue" required /></li>
+        <li><label for="Code postal">Code postal * : </label><input type="text" name="" id="Code postal" placeholder="Votre Code postal ici" required /></li>
+        <li><label for="Ville">Ville * : </label><input type="text" name="Ville" id="Votre ville ici" placeholder="Votre ville ici" required /></li>
+
+        <li><label for="uname">Pseudo * : </label><input type="text" placeholder="Entrer votre pseudo ici" name="Pseudo" required /></li>
+        <li><label for="psw">Mot de passe * : </label><input type="password" placeholder="Entrer votre mot de passe ici" name="mdp" required />
+          <button type="submit">Soumettre</button>
+            <label><input type="checkbox" checked="checked" name="Se souvenir" />Se souvenir de moi </label>
+        </li>
+
+      </ul>
+    </fieldset>
+    <fieldset class="InfoCompl">
+      <h1>Information complémentaire</h1>
+      <ul>
+        <p>Quel est votre niveau en développement ?
+          <input type="radio" name="Niveau" value="débutant" /><label for="débutant">Débutant</label>
+          <input type="radio" name="Niveau" value="junior" /><label for="junior">Junior</label>
+          <input type="radio" name="Niveau" value="expert"><label for="expert">Expert</label></p>
+      </ul>
+      <p>Quel est votre niveau de connaissance dans les différents langages :</p>
+      <div class="Ckeckbox">
+        <p>Ruby : <input type="checkbox" name="Ruby" value="Ruby"><br>
+        Python : <input type="checkbox" name="Python" value="Python"><br>
+        PHP : <input type="checkbox" name="PHP" value="PHP"><br>
+        Java : <input type="checkbox" name="Java" value="Java"><br>
+        NodeJS : <input type="checkbox" name="NodeJS" value="NodeJS"><br>
+        ReactJS : <input type="checkbox" name="ReactJS" value="ReactJS"><br>
+        C# : <input type="checkbox" name="C#" value="C#">
+        <p>
+          </div>
+          <label for="OS">Sur quel OS travaillez-vous ?</label>
+          <select class="OS" name="OS">
+            <option value="Blanc" selected disabled></option>
+            <optgroup label="WINDOWS">
+              <option value="Windows 10">Windows 10</option>
+              <option value="Windows 8">Windows 8</option>
+              <option value="Windows 7">Windows 7</option>
+            </optgroup>
+              <optgroup label="LINUX">
+              <option value="Ubuntu">Ubuntu</option>
+              <option value="Debian">Debian</option>
+            </optgroup>
+            <optgroup label="Autres">
+              <option value="MacOS">MacOS</option>
+              <option value="ChromeOS">ChromeOS</option>
+              <option value="Autre">Autre</option>
+            </optgroup>
+
+
+          </select>
+        </p>
+    </fieldset>
+
+    <fieldset class="Infopromo">
+      <h1>Information liées à la promotion</h1>
+      <ul>
+        <li><label for="Promo">Pour quelles promotion candidatez-vous ?</label>
+          <select class="mois" name="Mois">
+            <option value="Blanc" selected disabled></option>
+            <option value="Janvier">Janvier</option>
+            <option value="Février">Février</option>
+            <option value="Mars">Mars</option>
+            <option value="Avril">Avril</option>
+            <option value="Mai">Mai</option>
+            <option value="Juin">Juin</option>
+            <option value="Juillet">Juillet</option>
+            <option value="Août">Août</option>
+            <option value="Septembre">Septembre</option>
+            <option value="Octobre">Octobre</option>
+            <option value="Novembre">Novembre</option>
+            <option value="Décembre">Décembre</option>
+          </select>
+          <select class="Année" name="Année">
+            <option value="Blanc" selected disabled></option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+          <p>Merci de nous faire parvenir votre URL Github : <input type="url" name="URL" value="URL" placeholder="Votre URL"></p>
+          <p><label for="Question">Si vous avez des questions vous pouvez nous les laisser en commentaire ci-dessous : </label><br>
+            <textarea name="Commentaire" rows="8" cols="80"></textarea><br>
+            <button type="submit" name="Envoyer">Envoyer</button>
+      </ul>
+    </fieldset>
+    <div class="Champs"> * Champs obligatoire </div>
+
+  </form>
+</body>
+
+</html>
