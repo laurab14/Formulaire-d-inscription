@@ -1,20 +1,39 @@
 .InfoCompl {
   background: #cea49b;
 }
+
 .Infopromo {
   background: #a48079
 }
+
 .InfoPerso {
   background: #d5bbb6
 }
+
 h1 {
   text-align: center;
+  font-family: Arial;
+  color: #782c52;
+  text-decoration: underline overline #573e4a;
+}
+
+ul, p {
   line-height: 2.5;
 }
-ul,p{
-  line-height: 2.5;
+
+.checkboxT {
+  list-style-type: none;
 }
-.checkbox {
-width: 15%
-height:15%
+
+#checkboxalign1, #checkboxalign2, #checkboxalign3, #checkboxalign4, #checkboxalign5, #checkboxalign6, #checkboxalign7 {
+  position: absolute;
+right: 85%;
+}
+
+label[for=Pseudo], label[for=mdp] {
+  font-weight: bold;
+}
+
+.Champs {
+  font-style: italic;
 }
